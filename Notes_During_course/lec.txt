@@ -1,0 +1,77 @@
+`Commands to start a vite project
+npm create vite@latest
+name the project then select react then select javascript
+go into the project by cd 
+then use Command `npm i`
+to check the all downloaded files are working use Command `npm run dev`
+now install the tailwind css by `install -D tailwindcss postcss autoprefixer`
+then`npx tailwindcss init -p`
+rest read from the tailwind website in the config with the vite 
+install react snippets and then while making the components just type rfce
+`
+react got its name because its reacts when any variable is updated.
+React creates its own DOM and then work on it 
+we use react DOM for browser and we use react native for mobile 
+React creates A virtual DOM and then we pass the document into it and then we render the app we are making 
+and app is just a collection of some javascript programs 
+If we want to render any particular tag in the HTML document then we pass it by making react element into the root 
+
+React contains different bundler which converts the html codes into the form of the react element (Object) because react can 
+only analyze the react element codes 
+
+React provides a special function create element which takes a certain parameters 
+in the create element function we can only pass variables and the evaluated expression into it because we cannot write
+the whole code inside the Object
+
+reacts provides different hooks which helps in updating the variable in the UI 
+
+Create Root function creats a virtual DOM and then check the main DOM to see if any changes have been made in the 
+GUI and then updated the changes but the browser just repaints all the contents of the website or reload the page
+
+whenever any website get loaded we first get the page layout {buttons and Images But it will not work} and then when we get the 
+javascript then these all layout will be start working and this process when js get loaded is known as Hydration
+
+Reconciliation is  the algorithm used by react to difference the browser tree and the virtual tree and decide which
+parts should be updated this process is known as Reconciliation 
+
+this gives power to react to just do the specific changes and not to reload the page every time the changes are made
+but there are certain components that which changes every thing then in this case react will completely change and relod the 
+page 
+
+if you want to increase the performance of lists then always use the key
+
+there is no need to update every changes immediately we can collect and and make changes in bulk this what the fibre do 
+fibre basic features:-
+pause work and back later to do it 
+assign priority to different work
+reuse previous completed work 
+abort work if its no longer needed
+
+Components: Instead of creating the traditional files on the basis of the the technology we create on the basis of the 
+use we make components to reuse the code for that we write the html once and 
+
+HOOKS
+Use callback memorizes the function as much as possible
+
+Use effect is called whenever the page is loaded and if any parameters are changed then also it reruns
+use effect is also use when a components is mounted or unmounted in use effect we pass two arguments first a function 
+second a dependcy array which holds the variables and any change in the variables will recall the function 
+
+Use ref it is used to give reference to the any element in the document so that we can manipulate it 
+Use Id is a react hook for generating unique id that can be passed to accessibility attributes. Do not call useID to generate keys in the lists.
+Use Loader is a react hook for loading the data which is passed in it
+Use Context is a hook 
+
+React Router installation 
+npm i react-router-dom
+nom run dev
+
+React Router features:
+It provides link Instead of a tag because a tag reloads the page and link loads without reloading 
+Outlet which helps in modification in between two different tags like updating home tag between the header and footer
+
+
+Context API and Redux(React-Redux or Redux Toolkit(rtk) ) 
+Context API is used to pass the value through the components and use in the inner layer where needed
+Redux helps in state management and by organaizing the values passed through the components in Context api
+Context is a provider and  is used to provide access to global context for this we have to wrap the components with the context 
